@@ -1,4 +1,4 @@
-if(process.env.NODE_ENV === 'development') {
+if(process.env.NODE_ENV === 'developement') {
   async function startMailDev () {
     const { default: Maildev } = await import('maildev')
     const maildev = new Maildev({

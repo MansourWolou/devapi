@@ -1,6 +1,6 @@
 import TaskModel from '#components/task/task-model.js'
 import { updateTask } from '#components/task/task-use-cases.js'
-import Joi from 'Joi'
+import Joi from 'joi'
 
 export async function index (ctx) {
   try {

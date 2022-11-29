@@ -1,7 +1,7 @@
 import ListModel from '#components/list/list-model.js'
 import TaskModel from '#components/task/task-model.js'
 
-import Joi from 'Joi'
+import Joi from 'joi'
 
 export async function index (ctx) {
   try {
