@@ -18,6 +18,11 @@ const taskSchema = new Schema({
     type: Schema.Types.ObjectId,
     required: true,
     ref: 'List'
+  },
+  author: {
+    type: Schema.Types.ObjectId,
+    required: true,
+    ref: 'User'
   }
 }, { 
   timestamps: true

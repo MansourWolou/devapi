@@ -20,7 +20,8 @@
     "koa-respond": "^2.1.0",
     "mongoose": "^6.7.2",
     "nanoid": "^4.0.0",
-    "nanoid-dictionary": "^4.3.0"
+    "nanoid-dictionary": "^4.3.0",
+    "nodemailer": "^6.8.0"
   },
   "scripts": {
     "dev": "nodemon -r dotenv/config app.js"
@@ -33,7 +34,7 @@
     "#config/*.js": "./src/config/*.js",
     "#components/*.js": "./src/components/*.js",
     "#routes/*.js": "./src/routes/*.js",
-    "#middlewares/*.js": "./src/middlewares/*.js",
+    "#middleware/*.js": "./src/middleware/*.js",
     "#services/*.js": "./src/services/*.js"
   }
 }
