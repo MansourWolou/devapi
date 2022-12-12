@@ -24,9 +24,8 @@ export async function register (ctx) {
   newUser.generateEmailVerificationToken()
   const user = await newUser.save()
   await sendWelcomeEmail(user,user.settings.validation_email_token)
-    .then((r) => console.log(r))
-    .catch(e => console.log(e))
-  ctx.ok(user)
+  const token = user.generateJWT()
+  ctx.ok({token})
  } catch(e) {
   ctx.badRequest({ message: e.message })
  }
