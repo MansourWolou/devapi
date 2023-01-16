@@ -1,5 +1,6 @@
 <template>
-  <div class="q-pa-xl">
+  <center>
+    <div class="q-pa-xl">
     <div class="flex flex-center column">
       <h1 class="q-mb-lg">Inscrivez vous</h1>
       <q-card>
@@ -13,6 +14,7 @@
       </q-card>
     </div>
   </div>
+  </center>
 </template>
 <script setup>
 import { ref } from 'vue'

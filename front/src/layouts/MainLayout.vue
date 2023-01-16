@@ -3,12 +3,16 @@
     <q-header elevated class="bg-white text-black">
       <q-toolbar>
         <q-toolbar-title>
-          Quasar App
+          <img
+            alt="app logo"
+            src="/public/icons/logo.png"
+            style="width: 30px; height: 30px"
+          >
         </q-toolbar-title>
-        <router-link to="/login">
+        <router-link color="accent" to="/login">
           Se connecter
         </router-link>
-        <q-btn outline label="S'inscrire" color="primary" no-caps class="q-mx-md" to="/register"/>
+        <q-btn outline rounded label="S'inscrire" color="accent" no-caps class="q-mx-md" to="/register"/>
       </q-toolbar>
     </q-header>
     <q-page-container>
